@@ -42,7 +42,7 @@ function Map() {
     },
     [geolocationPosition]
   );
-  console.log(geolocationPosition);
+  //console.log(geolocationPosition);
   return (
     <div className={styles.mapContainer}>
       {!geolocationPosition.lat && !geolocationPosition.lng && (
