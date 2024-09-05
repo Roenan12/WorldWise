@@ -37,14 +37,14 @@
       "id": 98443197
     },
     {
-      "cityName": "Vasles",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2024-09-04T07:20:35.221Z",
+      "cityName": "Manila",
+      "country": "Philippines (the)",
+      "emoji": "🇵🇭",
+      "date": "2024-09-05T07:12:01.846Z",
       "notes": "Test",
       "position": {
-        "lat": "46.63348044628217",
-        "lng": null
+        "lat": "14.590843633271117",
+        "lng": "120.98068852788559"
       },
       "id": 98443198
     }
