@@ -5,6 +5,7 @@ const AuthContext = createContext();
 const initialState = {
   user: null,
   isAuthenticated: false,
+  error: false,
 };
 
 function reducer(state, action) {
@@ -13,6 +14,8 @@ function reducer(state, action) {
       return { ...state, user: action.payload, isAuthenticated: true };
     case "logout":
       return { ...state, user: null, isAuthenticated: false };
+    case "error":
+      return { ...state, error: true, message: action.payload };
     default:
       throw new Error("Unknown action");
   }
@@ -32,8 +35,24 @@ function AuthProvider({ children }) {
   );
 
   function login(email, password) {
-    if (email === FAKE_USER.email && password === FAKE_USER.password)
+    if (email !== FAKE_USER.email && password !== FAKE_USER.password)
+      dispatch({
+        type: "error",
+        payload: alert("Invalid credentials"),
+      });
+    else if (email === FAKE_USER.email && password === FAKE_USER.password)
       dispatch({ type: "login", payload: FAKE_USER });
+    else if (email !== FAKE_USER.email)
+      dispatch({
+        type: "error",
+        payload: alert("Invalid email address"),
+      });
+    else if (password !== FAKE_USER.password)
+      dispatch({
+        type: "error",
+        payload: alert("Incorrect password"),
+      });
+    else throw new Error("Unknown action");
   }
 
   function logout() {
