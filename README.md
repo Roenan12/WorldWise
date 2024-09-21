@@ -73,8 +73,7 @@ To use the reverse geocoding feature, you need an API key from BigDataCloud. Add
 VITE_API_KEY=your_api_key_here
 ```
 
-## Acknowledgements
-
+## Technologies used
 - Vite
 - json-server
 - CSS Modules
@@ -82,3 +81,6 @@ VITE_API_KEY=your_api_key_here
 - react-leaflet
 - BigDataCloud
 - react-datepicker
+  
+## Acknowledgements
+This app was developed as part of the [Udemy course](https://www.udemy.com/course/the-ultimate-react-course/) by Jonas Schmedtmann. Special thanks to Jonas for being an excellent instructor throughout the course.
