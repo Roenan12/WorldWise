@@ -20,7 +20,7 @@ WorldWise is a React application built using Vite, json-server, and CSS modules.
 - **CRUD Operations**: Create and delete city functionality.
 - **Performance Optimization**: Improve performance with code splitting and lazy loading.
 
-## Learning Objectives
+## Key Concepts Learned
 
 - Understand and implement dynamic routes with React Router.
 - Manage state using `useReducer` and Context API.
