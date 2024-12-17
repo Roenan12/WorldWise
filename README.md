@@ -34,7 +34,7 @@ WorldWise is a React application built using Vite, json-server, and CSS modules.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/worldwise.git
+   git clone https://github.com/Roenan12/worldwise.git
    cd worldwise
 
    ```
